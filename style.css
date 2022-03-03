@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: #635854;
+    padding: 12px 12px;
+    border-bottom: 4px solid #3596F5;
+}
+
+.navbar {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.navbar-item {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.navlink {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-contacts {
+    text-align: right;
+}
+
+.navbar-text {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.navbar-phone {
+    width: 142px;
+    height: 40px;
+    left: 1218px;
+    top: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.phone {
+    text-align: end;
+}
+
+.phone-style {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.phone-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.main {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-image path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-image path:hover {
+    opacity: 1;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+}
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.counter-up,
+.counter-down {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.counter-item {
+    color: #635854;
+    font-size: 75px;
+    margin: 35px;
+}
+
+.counter {
+    font-size: 124px;
+    color: #635854;
+}
+
+.button-primary {
+    background: #3596F5;
+    border-radius: 6px;
+    padding: 16px 36px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.golist {
+    color: #fff;
+    background-color: #3596F5;
+    border-radius: 6px;
+    border: none;
+    padding: 16px 36px;
+    transition: 0.1s;
+}
+
+.golist:hover {
+    box-shadow: 5px 5px 10px #a4ccf1;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #D7D7D7;
+    border-top: solid 4px;
+    border-color: #3596F5;
+    padding: 50px 40px 56px;
+}
+
+.footer-contaner {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 37px;
+}
+
+.footer-phone {
+    font-size: 14px;
+    color: #635854;
+    margin-right: 59px;
+}
+
+.footer-phone-number {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: #635854;
+    transition: 0.2s;
+}
+
+.footer-phone-number:hover {
+    color: cornflowerblue;
+    transition: 0.2s;
+}
+
+.footer-massage a:not(:last-child) {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-massage {
+    margin-right: auto;
+    ;
+}
+
+.footer-info a {
+    margin-left: 20px;
+    color: #635854;
+}
+
+
+/* *****************************************770px */
+
+@media (max-width: 770px) {
+    .navlink {
+        flex-wrap: wrap;
+    }
+    .logo img {
+        width: 70%;
+    }
+    .link {
+        font-size: 12px;
+    }
+    .phone-style {
+        font-size: 12px;
+    }
+    .phone-link {
+        font-size: 12px;
+    }
+}
+
+
+/* ******************************************426px */
+
+@media (max-width: 426px) {
+    .link {
+        border: 1px solid #3595f594;
+    }
+    .link {
+        font-size: 10px;
+    }
+    .phone-style {
+        font-size: 10px;
+    }
+    .phone-link {
+        font-size: 10px;
+    }
+}
